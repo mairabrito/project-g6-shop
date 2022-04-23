@@ -1,2 +1,2 @@
-# project-g6-shop
+# Project G6 Shop
  
