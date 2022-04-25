@@ -105,15 +105,14 @@
       } //Fim popular a tabela
 
       document.getElementById('txtBusca').addEventListener("keyup", function () {
-        var busca = document.getElementById("txtBusca").value.toLowerCase();
-        console.clear();
-
+        var busca = document.getElementById("txtBusca").value.toLowerCase(); //Obter o valor do campo de busca
+        
         for (var i = 0; i < tbody.childNodes.length; i++) {
           var achou = false;
           var tr = tbody.childNodes[i];
           var td = tr.childNodes;
 
-          for (var j = 1; j < td.length-1; j++) {
+          for (var j = 1; j < td.length -1; j++) {
             var value = td[j].childNodes[0].nodeValue.toLowerCase();
             if (value.indexOf(busca) >= 0) {
               achou = true;
