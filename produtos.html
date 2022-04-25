@@ -70,6 +70,7 @@
               <th scope="col">Produto</th>
               <th scope="col">Tamanho</th>
               <th scope="col">Preço</th>
+              <th scope="col">#</th>
             </tr>
           </thead>
           <tbody id="tbody"></tbody>
@@ -80,14 +81,14 @@
     <script>
       //Popular a tabela
       var dados = [
-        ['<img src="img/camisa-preta.jpg" alt="" height="100px">', 'Camisa Preta', 'M', 'R$ 20,00'],
-        ['<img src="img/camisa-azul.jpg" alt="" height="100px">', 'Camisa Azul', 'P', 'R$ 230,00'],
-        ['<img src="img/calça.webp" alt="" height="100px">', 'Calça', 'P', 'R$ 50,99'],
-        ['<img src="img/vestido.webp" alt="" height="100px">', 'Vestido', 'M', 'R$ 10,99'],
-        ['<img src="img/blusa.webp" alt="" height="100px">', 'Blusa', 'M', 'R$ 20,49'],
-        ['<img src="img/tenis-adidas.webp" alt="" height="100px">', 'Tênis Adidas Preto', '39', 'R$ 20,89'],
-        ['<img src="img/tenis-adidas-azul.webp" alt="" height="100px">', 'Tênis Adidas Azul', '35', 'R$ 20,99'],
-        ['<img src="img/tenis-adidas-branco.webp" alt="" height="100px">', 'Tênis Adidas Branco', '36', 'R$ 20,99']
+        ['<img src="img/camisa-preta.jpg" alt="" height="100px">', 'Camisa Preta', 'M', 'R$ 20,00', '<button type="button" class="btn btn-danger">Comprar</button>'],
+        ['<img src="img/camisa-azul.jpg" alt="" height="100px">', 'Camisa Azul', 'P', 'R$ 230,00', '<button type="button" class="btn btn-danger">Comprar</button>'],
+        ['<img src="img/calça.webp" alt="" height="100px">', 'Calça', 'P', 'R$ 50,99', '<button type="button" class="btn btn-danger">Comprar</button>'],
+        ['<img src="img/vestido.webp" alt="" height="100px">', 'Vestido', 'M', 'R$ 10,99', '<button type="button" class="btn btn-danger">Comprar</button>'],
+        ['<img src="img/blusa.webp" alt="" height="100px">', 'Blusa', 'M', 'R$ 20,49', '<button type="button" class="btn btn-danger">Comprar</button>'],
+        ['<img src="img/tenis-adidas.webp" alt="" height="100px">', 'Tênis Adidas Preto', '39', 'R$ 20,89', '<button type="button" class="btn btn-danger">Comprar</button>'],
+        ['<img src="img/tenis-adidas-azul.webp" alt="" height="100px">', 'Tênis Adidas Azul', '35', 'R$ 20,99', '<button type="button" class="btn btn-danger">Comprar</button>'],
+        ['<img src="img/tenis-adidas-branco.webp" alt="" height="100px">', 'Tênis Adidas Branco', '36', 'R$ 20,99', '<button type="button" class="btn btn-danger">Comprar</button>']
       ];
 
       var tbody = document.getElementById("tbody");
@@ -97,6 +98,7 @@
           "<td>" + dados[i][1] + "</td>" +
           "<td>" + dados[i][2] + "</td>" +
           "<td>" + dados[i][3] + "</td>" +
+          "<td>" + dados[i][4] + "</td>" +
           "</tr>";
         tbody.innerHTML += tr;
         var tr = tbody.childNodes;
